@@ -13,4 +13,4 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::get('get-codigo/{codigo}', 'CodigoPostalController@obtenerInformacionCodigoPostal');
+Route::get('zip-codes/{zip_code}', 'CodigoPostalController@obtenerInformacionCodigoPostal');

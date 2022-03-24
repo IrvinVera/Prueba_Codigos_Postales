@@ -8,12 +8,12 @@ use \stdClass;
 class CodigoPostalController extends Controller
 {
 
-    public function obtenerInformacionCodigoPostal($codigo){
+    public function obtenerInformacionCodigoPostal($zip_code){
 
         $respuesta = "";
         $array_settlements = [];
 
-        $codigos_encontrados =  Codigo::where('d_codigo',$codigo)->get();
+        $codigos_encontrados =  Codigo::where('d_codigo',$zip_code)->get();
 
             $informacion_codigo_postal = $codigos_encontrados[0];
 
